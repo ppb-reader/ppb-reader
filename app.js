@@ -3,15 +3,16 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var session=require("express-session");
 var bodyParser = require('body-parser');
 var ejs=require("ejs");
-
 var index = require('./routes/index');
 var users = require('./routes/users');
-
+var adminlogin=require("./routes/adminLogin");
 var app = express();
 
 // view engine setup
+app.use(session({secret:"keyboard cat",name:"abc",cookie:{ }}))
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -23,8 +24,27 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/users', users);
+
+app.use('/',index);
+app.use("/admin",function(req,res,next){
+  console.log(1)
+  next();
+  //if(req.session.login){
+  //  next();
+  //}else{
+  //  res.redirect("/adminlogin");
+  //}
+},users);
+app.use("/adminlogin",adminlogin);
+
+//app.use(function(req,res,next){
+//  if(req.signedCookies.login){
+//    res.locals.login="login";
+//  }else{
+//    res.locals.login="";
+//  }
+//  next();
+//});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -44,5 +64,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(8000);
-// module.exports = app;
+app.listen(8088);
+module.exports = app;
