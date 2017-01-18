@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>checkLove</title>
+    <script src="../js/resize.js"></script>
+    <script src="../js/mui.min.js"></script>
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <style>
+        body,ul,li{
+            list-style: none;
+        }
+        .mui-bar.mui-bar-nav{
+            background: #29A6DC;
+            height:1rem;
+        }
+        .mui-bar .mui-title{
+            color:#fff;
+            font-size: 0.42rem;
+        }
+        #ppb_p_en{
+            margin-top: 0.36rem;
+            font-size: 0.2rem;
+        }
+        .iconfont.icon-fangxiang1{
+            float: left;
+            color: #fff;
+            font-size: 0.64rem;
+            padding-top: 0.34rem;
+        }
+
+        .ppb_container{
+            margin-top: 1.74rem;
+        }
+
+        .ppb_container span{
+            padding:0 0.8rem;
+            font-size: 0.26rem;
+        }
+        .ppb_personal_center li{
+            border-bottom: 0.03rem dashed #999;
+            height:0.9rem;
+            line-height: 0.9rem;
+        }
+        .ppb_personal_center li a{
+            padding-left:0.2rem;
+            font-size: 0.42rem;
+            float:left;
+        }
+        .ppb_personal_center li span{
+            line-height: 0.7rem;
+            font-size: 0.28rem;
+            float: left;
+        }
+        .ppb_personal_center li p{
+            float:right;
+            margin-right: 0.4rem;
+            margin-bottom: 0;
+        }
+        .ppb_logout{
+            background: #28DD8B;
+            border-radius: 0.6rem;
+            width:5.68rem;
+            height: 0.66rem;
+            border:1px solid #28DD8B;
+            position: fixed;
+            left:0;right:0;bottom:1rem;
+            margin: auto ;
+            text-align: center;
+            line-height: 0.7rem;
+        }
+        .ppb_logout a{
+            background: #28DD8B;
+            color: #fff;
+            border: 0;
+        }
+        .ppb_container div{
+            margin-top: 0.9rem;
+            float:left;
+        }
+
+        .ppb_container span{
+            border: 0.01rem solid #000;
+            border-radius: 4rem;
+            font-size: 0.4rem;
+            padding: 0 0.3rem;
+            padding-top: 0.16rem;
+            padding-bottom: 0.16rem;
+        }
+
+        .ppb_love1{
+            float: left;
+            margin-left: 1.8rem;
+            margin-right: 0.4rem;
+        }
+        .ppb_love3,.ppb_love4{
+            margin-left: 0.6rem;
+            margin-right: 0.2rem;
+        }
+        .ppb_love4{
+            margin-left: 0;
+        }
+        .ppb_love6{
+            margin-left: 1.6rem;
+            margin-right: 0.4rem;
+        }
+        .ppb_love8{
+            margin-left: 0.8rem;
+        }
+        .ppb_love9{
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+        }
+        .ppb_love11{
+            margin-left: 1.1rem;
+            margin-right: 0.4rem;
+        }
+        .ppb_love13{
+            margin-left: 1.36rem;
+        }
+        .ppb_love4 span,.ppb_love7 span,.ppb_love10 span,.ppb_love11 span,.ppb_love13 span{
+            background: #29A6DC;
+            color:#fff;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a href="" class="mui-action-back iconfont icon-fangxiang1"></a>
+    <h1 class="mui-title" style="margin-top: -0.1rem;font-weight: bold">偏好选择</h1>
+    <h3 class="mui-title" style="margin-top: 0.1rem">
+        <img src="../img/ppb_personal_xian.png" alt="">
+    </h3>
+    <span class="mui-title" id="ppb_p_en">PREFERENGE SELECTION</span>
+
+</header>
+
+<div class="ppb_container">
+    <div class="ppb_love1" >
+        <span >艺术</span>
+    </div>
+    <div class="ppb_love2">
+        <span>军事经济</span>
+    </div>
+    <div class="ppb_love3">
+        <span>社会科学</span>
+    </div>
+    <div class="ppb_love4">
+        <span>医学卫生</span>
+    </div>
+    <div class="ppb_love5">
+        <span>交通</span>
+    </div>
+    <div class="ppb_love6">
+        <span>农业</span>
+    </div>
+    <div class="ppb_love7">
+        <span>马克思主义</span>
+    </div>
+    <div class="ppb_love8">
+        <span>政治</span>
+    </div>
+    <div class="ppb_love9">
+        <span>工业技术</span>
+    </div>
+    <div class="ppb_love10">
+        <span>法律</span>
+    </div>
+    <div class="ppb_love11">
+        <span>毛泽东思想</span>
+    </div>
+    <div class="ppb_love12">
+        <span>航空航天</span>
+    </div>
+    <div class="ppb_love13">
+        <span>环境科学/劳动保护科学</span>
+    </div>
+
+
+</div>
+<div class="ppb_logout">
+    <a href="">开启阅读</a>
+</div>
+</body>
+</html>
