@@ -1,0 +1,143 @@
+html,body,ul,li{
+    padding:0;margin: 0;
+    border: 0;
+    background: none;
+}
+*{
+    font-family:"苹方";
+	list-style: none;
+	text-decoration: none;
+}
+.zl-header{
+	min-width: 7.5px;
+	height: 4.76rem;
+	background: #29a6dc;
+}
+.zl-header .zl-back{
+	float: left;
+	background: #fff;
+	width: 0.6rem;
+	height: 0.6rem;
+	border: 1px solid #096dbe;
+	border-radius: 50%;
+	margin-top: 0.75rem;
+	text-align: center;
+	color: #40afdf;
+	line-height: 0.55rem;
+	margin-left: 0.36rem;
+}
+.zl-title{
+	width: 50%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.45rem;
+	color: #f2f2f2;
+	margin-left: 1.85rem;
+	text-align: center;
+	margin-top: 0.75rem;
+	float: left;
+}
+.zl-title1{
+	margin-left: 0.9rem;
+}
+.zl-header .zl-logo{
+	float: left;
+	width: 1.75rem;
+	height: 1.05rem;
+	margin-left: 2.87rem;
+	margin-top:0.78rem;
+}
+.zl-tit{
+	margin-top:0.45rem;
+}
+.zl-tit p{
+	padding: 0 0.72rem;
+	font-size: 0.32rem;
+	color: #0a196b;
+}
+.zl-tit #p{
+	text-align: right;
+}
+.zl-login-form{
+	margin-top: 0.45rem;
+	padding: 0 0.68rem;
+}
+.zl-login{
+	position: relative;
+}
+.zl-login div{
+	width: 6.15rem;
+	height: 0.98rem;
+	border: 1px solid #3a91fd;
+	border-radius: 0.5rem;
+	margin-bottom: 0.4rem;
+	padding: 0 0.46rem;
+}
+.zl-login .bg1{
+	background-image: url("../img/1-登录注册_03.png");
+	background-repeat: no-repeat;
+    background-size: 0.6rem 0.6rem;
+}
+.zl-login .bg2{
+	background-image: url(../img/1-登录注册_06.png);
+	background-repeat: no-repeat;
+    background-size: 0.6rem 0.6rem;
+}
+.user,.pass{
+	background-position: 0.46rem;
+}
+.zl-login input{
+	margin-left: 0.6rem;
+	border: 0;width: 4rem;
+	height: 100%;
+	font-size: 0.36rem;
+	color:#999999;
+}
+.zl-loginBot{
+	width: 100%;
+	padding: 0 0.52rem;
+}
+.zl-loginBot .zl-zpass{
+	float: left;
+	background-image: url(../img/1-登录注册_09.png);
+	background-repeat: no-repeat;
+    background-size: 0.45rem 0.45rem;
+}
+.zl-loginBot .zl-reg{
+	float: right;
+	background-image: url(../img/1-登录注册_11.png);
+	background-repeat: no-repeat;
+    background-size: 0.45rem 0.45rem;
+}
+.zl-loginBot a{
+	color: #666666;
+	font-size: 0.3rem;
+	margin-left: 0.7rem;
+}
+.zl-button{
+	width: 5.64rem;
+	height: 0.68rem;
+	margin-top: 1.5rem;
+	margin-left: 0.32rem;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+.zl-button input{
+	background: none;
+	border: 0;
+	font-size: 0.36rem;
+}
+.zl-button .zl-yuan{
+	float: left;
+	width: 0.12rem;height: 0.12rem;
+	background: #f2f2f2;
+	border-radius: 50%;
+	margin-top: 0.3rem;
+}
+.zl-button .yuan1{
+	margin-left: 0.30rem;
+}
+.zl-button .yuan2{
+	float: right;
+	margin-right: 0.30rem;
+}

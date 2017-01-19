@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>修改密码</title>
+    <script src="/js/mui.min.js"></script>
+    <link href="/css/mui.min.css" rel="stylesheet"/>
+    <link href="/css/login.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+			function resize(originSize,type){
+			    var type=type||"x";
+			    var widths=document.documentElement.clientWidth;
+			    var heights=document.documentElement.clientHeight;
+			    if(type=="x"){
+			        var scale=widths/originSize*100;
+			    }else if(type=="y"){
+			        var scale=heights/originSize*100;
+			    }
+			
+			    document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+			}
+			
+			window.onload=function(){
+			    resize(750)
+			}	
+    </script>
+   
+</head>
+<body>
+	<div class="zl-header">
+		<div class="zl-back"><</div>
+		<div class="zl-title zl-title1">修改密码</div>
+		<div class="zl-logo">
+			<img src="img/logo.png" alt="" style="width: 100%;"/>
+		</div>
+	</div>
+	<div class="zl-tit">
+		<p>或作或辍，一曝十寒，则虽读书百年，吾未见其可也。</p>
+		<p id="p">—— 吴梦祥</p>
+	</div>
+	<div class="zl-login-form">
+		<form action="/indexlogin/xiugaipass/<%=id%>" method="post">
+			<div class="zl-login">
+				<div class="user bg2">
+					<input type="password" name="pass" placeholder="请输入密码"/>
+				</div>
+				<div class="pass bg2">
+					<input type="password" name="pass1" placeholder="请再次输入密码"/>
+				</div>
+			</div>
+			<div class="zl-loginBot">
+				<div class="zl-zpass">
+					<a href="">我要登录</a>
+				</div>
+				<div class="zl-reg">
+					<a href="">我要注册</a>
+				</div>
+			</div>
+			<div class="zl-button" style="background: #3abffd;">
+				<div class="zl-yuan yuan1"></div>
+				<input type="submit" value="完成"/>
+				<div class="zl-yuan yuan2"></div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
