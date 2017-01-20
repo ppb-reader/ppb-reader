@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>我的书架</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/bookjia.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+			function resize(originSize,type){
+			    var type=type||"x";
+			    var widths=document.documentElement.clientWidth;
+			    var heights=document.documentElement.clientHeight;
+			    if(type=="x"){
+			        var scale=widths/originSize*100;
+			    }else if(type=="y"){
+			        var scale=heights/originSize*100;
+			    }
+			
+			    document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+			}
+			
+			window.onload=function(){
+			    resize(750)
+			}	
+    </script>
+</head>
+<body>
+	<div class="zl-header">
+		<div class="zl-title">
+			我的书架
+		</div>
+		<div class="zl-search">
+			<a class="mui-icon mui-icon-search" href="#!/booksearch"></a>
+		</div>
+	</div>
+	<div id="slider" class="mui-slider" >
+	  <div class="mui-slider-group mui-slider-loop">
+	    <div class="mui-slider-item mui-slider-item-duplicate">
+	      <a href="#">
+	        <img src="img/ban1.jpg">
+	      </a>
+	    </div>
+	    <!-- 第一张 -->
+	    <div class="mui-slider-item">
+	      <a href="">
+	        <img src="img/ban1.jpg">
+	      </a>
+	    </div>
+	    <!-- 第二张 -->
+	    <div class="mui-slider-item">
+	      <a href="#">
+	        <img src="img/ban1.jpg">
+	      </a>
+	    </div>
+	    <!-- 第三张 -->
+	    <div class="mui-slider-item">
+	      <a href="#">
+	        <img src="img/ban1.jpg">
+	      </a>
+	    </div>
+	    <!-- 第四张 -->
+	    <div class="mui-slider-item">
+	      <a href="#">
+	        <img src="img/ban1.jpg">
+	      </a>
+	    </div>
+	    <div class="mui-slider-item mui-slider-item-duplicate">
+	      <a href="#">
+	        <img src="img/ban1.jpg">
+	      </a>
+	    </div>
+	  </div>
+	  <div class="mui-slider-indicator">
+	    <div class="mui-indicator mui-active"></div>
+	    <div class="mui-indicator"></div>
+	    <div class="mui-indicator"></div>
+	    <div class="mui-indicator"></div>
+	  </div>
+	</div>
+	<div class="zl-newBook">
+		<div class="zl-bookTit bg">最近阅读</div>
+		<ul class="zl-bookCon">
+			<li class="zl-bookList" ng-repeat="list in data">
+				<a href="#!/show/{{list.id}}">
+					<img src="{{list.img}}" alt="" style="width: 100%;"/>
+					<span class="zl-author">{{list.name}}</span>
+				</a>
+			</li>
+			<!--<li class="zl-bookList">-->
+				<!--<a href="">-->
+					<!--<img src="img/book1.png" alt="" style="width: 100%;"/>-->
+					<!--<span class="zl-author">书名</span>-->
+				<!--</a>-->
+			<!--</li>-->
+			<!--<li class="zl-bookList">-->
+				<!--<a href="">-->
+					<!--<img src="img/book1.png" alt="" style="width: 100%;"/>-->
+					<!--<span class="zl-author">书名</span>-->
+				<!--</a>-->
+			<!--</li>-->
+		</ul>
+	</div>
+	<div class="zl-newBook" style="margin-bottom: 1.5rem;">
+		<div class="zl-bookTit bgs">最新上架</div>
+		<ul class="zl-readCon"  >
+			<li class="zl-readList" ng-repeat="ifrem in data">
+				<a href="#!/show/{{ifrem.id}}"class="zl-readImg">
+					<img src="img/read.png" alt="" style="height: 100%;"/>
+				</a>
+				<div class="zl-readRight">
+					<p id="zl-readrightTit">{{ifrem.name}}</p>
+					<p>{{ifrem.name}}</p>
+					<p>{{ifrem.con | limitTo:10:0}}</p>
+					<div class="zl-willRead">
+						<a href="#!/show/{{ifrem.id}}">继续阅读</a>
+					</div>
+				</div>
+			</li>
+			<!--<li class="zl-readList">-->
+				<!--<a href=""class="zl-readImg">-->
+					<!--<img src="img/read.png" alt="" style="height: 100%;"/>-->
+				<!--</a>-->
+				<!--<div class="zl-readRight">-->
+					<!--<p id="zl-readrightTit">愿有人陪你颠沛流离</p>-->
+					<!--<p>愿有人陪你颠沛流离</p>-->
+					<!--<p>愿你能够明白世上所有的相遇都有它愿你能够明白世上所有的相遇都有它</p>-->
+					<!--<div class="zl-willRead">-->
+						<!--<a href="">继续阅读</a>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</li>-->
+			<!--<li class="zl-readList">-->
+				<!--<a href=""class="zl-readImg">-->
+					<!--<img src="img/read.png" alt="" style="height: 100%;"/>-->
+				<!--</a>-->
+				<!--<div class="zl-readRight">-->
+					<!--<p id="zl-readrightTit">愿有人陪你颠沛流离</p>-->
+					<!--<p>愿有人陪你颠沛流离</p>-->
+					<!--<p>愿你能够明白世上所有的相遇都有它愿你能够明白世上所有的相遇都有它</p>-->
+					<!--<div class="zl-willRead">-->
+						<!--<a href="">继续阅读</a>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</li>-->
+		</ul>
+	</div>
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active">
+	        <span class="mui-icon mui-icon-home"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-phone"></span>
+	        <span class="mui-tab-label">电话</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon mui-icon-email"></span>
+	        <span class="mui-tab-label">邮件</span>
+	    </a>
+	</nav>
+</body>
+</html>

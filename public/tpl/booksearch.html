@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>搜索书籍</title>
+    <script src="/js/mui.min.js"></script>
+    <link href="/css/mui.min.css" rel="stylesheet"/>
+    <link href="/css/booksearch.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+			function resize(originSize,type){
+			    var type=type||"x";
+			    var widths=document.documentElement.clientWidth;
+			    var heights=document.documentElement.clientHeight;
+			    if(type=="x"){
+			        var scale=widths/originSize*100;
+			    }else if(type=="y"){
+			        var scale=heights/originSize*100;
+			    }
+			
+			    document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+			}
+			
+			window.onload=function(){
+			    resize(750)
+			}	
+   </script>
+</head>
+<body>
+	<div class="zl-header">
+		<div class="zl-back"><</div>
+		<div class="zl-search">
+			<a class="mui-icon mui-icon-search" style=""></a>
+			<input type="text" placeholder="搜索本地与网络书籍"/>
+		</div>
+	</div>
+	<div class="zl-newBook" style="margin-bottom: 1.5rem;">
+		<div class="zl-bookTit bg"style="margin-bottom: 0.2rem;">热门搜索</div>
+		<ul class="zl-readCon"  >
+			<li class="zl-readList" ng-repeat="list in data track by id">
+				<a href="#!/show" class="zl-readImg">
+					<img src="{{list.img}}" alt="" style="height: 100%;"/>
+				</a>
+				<div class="zl-readRight">
+					<p id="zl-readrightTit">《{{list.title}}》</p>
+					<p>{{list.con | limitTo:25:0}}...</p>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+</body>
+</html>

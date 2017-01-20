@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>榜单</title>
+    <script src="/js/mui.min.js"></script>
+    <script src="/js/zepto.min.js"></script>
+    <script src="/js/animoutes.js"></script>
+    <link href="/css/mui.min.css" rel="stylesheet"/>
+    <link href="/css/bangdanlist.css" rel="stylesheet"/>
+	<script type="text/javascript" charset="utf-8">
+		function resize(originSize,type){
+			var type=type||"x";
+			var widths=document.documentElement.clientWidth;
+			var heights=document.documentElement.clientHeight;
+			if(type=="x"){
+				var scale=widths/originSize*100;
+			}else if(type=="y"){
+				var scale=heights/originSize*100;
+			}
+
+			document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+		}
+		window.onload=function(){
+			resize(750)
+		}
+	</script>
+</head>
+<body>
+	<div class="zl-header">
+					<div class="zl-headNav">
+						<div class="zl-navBox">
+							<ul class="zl-navCon">
+								<li class="zl-navList zl-active">精选</li>
+					<li class="zl-xian"></li>
+					<li class="zl-navList">榜单</li>
+					<li class="zl-xian"></li>
+					<li class="zl-navList">分类</li>
+				</ul>
+			</div>
+			<div class="zl-search">
+				<a class="mui-icon mui-icon-search" href="#!/booksearch"></a>
+			</div>
+		</div>
+	</div>
+	<div class="zl-Box zl-boxActive">
+		<div id="slider" class="mui-slider" >
+	  <div class="mui-slider-group mui-slider-loop">
+	    <div class="mui-slider-item mui-slider-item-duplicate">
+	      <a href="#">
+	        <img src="img/ban1.jpg">
+	      </a>
+	    </div>
+	    <!-- 第一张 -->
+	    <div class="mui-slider-item" ng-repeat="lunbo in data | limitTo:4:0">
+	      <a href="#!/show">
+	        <img src="{{lunbo.img}}">
+	      </a>
+	    </div>
+
+	  </div>
+	  <div class="mui-slider-indicator">
+	    <div class="mui-indicator mui-active"></div>
+	    <div class="mui-indicator"></div>
+	    <div class="mui-indicator"></div>
+	    <div class="mui-indicator"></div>
+	  </div>
+	</div>
+	<div class="zl-newBook">
+		<div class="zl-bookTit bg">最近上架</div>
+		<ul class="zl-bookCon">
+			<li class="zl-bookList" ng-repeat="zuij in data | limitTo:9:5">
+				<a href="#!/show">
+					<img src="{{zuij.img}}" alt="" style="width: 100%;"/>
+					<span class="zl-name">{{zuij.title}}</span>
+					<span class="zl-author">{{zuij.name}}</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+	<div class="zl-Box">
+		<div class="zl-bangBox">
+			<div class="zl-bangLeft">
+				<div class="zl-bangTit">
+					<a href="">新书·阅读榜单</a>
+				</div>
+				<div class="zl-bangImg">
+					<img src="img/图书.png" alt="" style="width: 100%;"/>
+				</div>
+				<span class="zl-bangcon">美味的食物贵的有山珍海味物贵的有山珍海味</span>
+			</div>
+			<div class="zl-bangRight">
+				<div class="zl-bangTwo">
+					<a href="">美味的食物</a>
+				</div>
+				<div class="zl-bangOne">
+					<a href="">美味的食物</a>
+				</div>
+				<div class="zl-bangThree">
+					<a href="">美味的食物</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="zl-Box">
+		<div class="zl-contain">
+			<div class="zl-Tit">网络文学</div>
+			<div class="zl-listCon">
+				<div class="zl-listName">·男生专区</div>
+				<div class="zl-listBox">
+					<div class="zl-listBook">
+						<img src="img/list1.png" alt="" width="100"/>
+						<span class="zl-listN">仙侠</span>
+					</div>
+					<div class="zl-listBook">
+						<img src="img/list1.png" alt="" width="100"/>
+						<span class="zl-listN">仙侠</span>
+					</div>
+					<div class="zl-listBook">
+						<img src="img/list1.png" alt="" width="100"/>
+						<span class="zl-listN">仙侠</span>
+					</div>
+				</div>
+				<div class="zl-listBox">
+					<div class="zl-listBook">
+						<img src="img/list1.png" alt="" width="100"/>
+						<span class="zl-listN">仙侠</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

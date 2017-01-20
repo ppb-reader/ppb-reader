@@ -1,0 +1,116 @@
+html,body,ul,li,p{
+    padding:0;margin: 0;
+    border: 0;
+    background: none;
+}
+*{
+    font-family:"苹方";
+	list-style: none;
+	text-decoration: none;
+}
+
+.zl-header{
+	height: 0.88rem;
+	background: #29a6dc;
+	position: relative;
+}
+.zl-header .zl-back{
+	background: #fff;
+	width: 0.6rem;
+	height: 0.6rem;
+	border: 1px solid #096dbe;
+	border-radius: 50%;
+	text-align: center;
+	color: #40afdf;
+	line-height: 0.55rem;
+	position: absolute;
+	left:0.36rem;top: 0.14rem;
+}
+.zl-header .zl-title{
+	font-size: 0.36rem;
+	color: #fffefe;
+	line-height: 0.88rem;
+	text-align: center;
+}
+.zl-search .mui-icon-search{
+	color:#fffefe ;
+	line-height: 0.88rem;
+	position: absolute;
+	right: 0.24rem;top: 0;
+}
+
+.zl-newBook{
+	padding: 0 0.28rem;
+	margin-top: 0.4rem;
+}
+.zl-newBook .zl-bookTit{
+	color: #333333;
+	font-size: 0.32rem;
+	padding: 0 0.56rem;
+}
+.zl-newBook .bg{
+	background-image: url(../img/收藏.png);
+	background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+}
+.zl-bookCon{
+	width: 100%;
+	height: 3.6rem;
+	margin-top: 0.3rem;
+	overflow: hidden;
+}
+.zl-bookCon .zl-bookList{
+	width: 2.2rem;float: left;
+	margin-left: 0.1rem;
+	text-align: center;
+	box-shadow: 0 0 0.2rem #d6d3d3;
+}
+.zl-bookList .zl-author{
+	color: #333333;
+	font-size: 0.3rem;
+}
+.zl-newBook .bgs{
+	background-image: url(../img/阅读.png);
+	background-repeat: no-repeat;
+    background-size: 0.4rem 0.4rem;
+}
+
+.zl-readCon .zl-readList{
+	height: 2.21rem;
+	padding: 0.1rem 0.1rem;
+	box-shadow: 0 0 0.2rem #d6d3d3;
+}
+.zl-readList .zl-readImg{
+	float: left;
+	width: 1.45rem;
+	height: 100%;
+	margin-right: 0.1rem;
+}
+.zl-readList .zl-readRight{
+	float: left;
+	width:5.1rem;height: 100%;
+	overflow: hidden;
+}
+.zl-readRight p{
+	font-size: 0.16rem;
+	height: 0.4rem;
+}
+.zl-readRight #zl-readrightTit{
+	color: #333;
+	font-size: 0.3rem;
+}
+.zl-readRight .zl-willRead{
+	width: 1.51rem;height: 0.4rem;
+	background: #29a5db;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 0.35rem;
+	margin-top: 0.4rem;
+}
+.zl-willRead a{
+	color: #F2F2F2;
+	font-size: 0.22rem;
+}
+
+
+

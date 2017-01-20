@@ -1,0 +1,149 @@
+html,body,ul,li,p{
+    padding:0;margin: 0;
+    border: 0;
+    background: none;
+}
+*{
+    font-family:"苹方";
+	list-style: none;
+	text-decoration: none;
+}
+
+.zl-header{
+	height: 0.88rem;
+	background: #29a6dc;
+	position: relative;
+}
+.zl-header .zl-back{
+	background: #fff;
+	width: 0.6rem;
+	height: 0.6rem;
+	border: 1px solid #096dbe;
+	border-radius: 50%;
+	text-align: center;
+	color: #40afdf;
+	line-height: 0.55rem;
+	position: absolute;
+	left:0.36rem;top: 0.14rem;
+}
+.zl-header .zl-title{
+	font-size: 0.36rem;
+	color: #fffefe;
+	line-height: 0.88rem;
+	text-align: center;
+}
+.zl-search .mui-icon-search{
+	color:#fffefe ;
+	line-height: 0.88rem;
+	position: absolute;
+	right: 0.24rem;top: 0;
+}
+.zl-headNav{
+	height: 1.16rem;
+	background: #f2f2f2;
+}
+.zl-headNav .zl-navBox{
+	float: left;
+	width: 6.2rem;
+	height: 0.84rem;
+	background: #2a3441;
+	border-radius: 0.6rem;
+	margin-left: 0.65rem;
+	margin-top: 0.16rem;
+}
+.zl-navCon{
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0.25rem;
+}
+.zl-navCon .zl-navList{
+	float: left;
+	color: #fff;
+	width: 1.53rem;height: 0.66rem;
+	text-align: center;margin-top: 0.09rem;
+	line-height: 0.66rem;
+}
+.zl-navCon .zl-xian{
+	width: 0.02rem;float: left;
+	height: 0.84rem;
+	background: #c4c4c4;
+	margin: 0 0.25rem;
+}
+.zl-navCon .zl-active{
+	background: #29a6dc;
+	border: 0.02rem solid #fff;
+	border-radius: 0.3rem;
+	margin-top: 0.09rem;
+}
+
+
+.zl-contain{
+	margin-top: 0.2rem;
+	width:100%;float: left;
+}
+
+.zl-readCon .zl-readList{
+	width:100%;height: 3.71rem;
+	padding: 0.1rem 0.25rem;
+	box-shadow: 0 0 0.2rem #d6d3d3;
+}
+.zl-readList .zl-readImg{
+	float: left;
+	width: 2.46rem;
+	height: 100%;
+	margin-right: 0.25rem;
+}
+.zl-readList .zl-readRight{
+	float: left;
+	width:4.25rem;height: 100%;
+	overflow: hidden;
+}
+.zl-readRight p{
+	font-size: 0.16rem;
+	line-height: 0.4rem;
+}
+.zl-readRight #zl-readrightTit{
+	color: #333;
+	font-size: 0.3rem;
+}
+.zl-readRight .zl-author{
+	margin-top: 0.4rem;
+}
+.zl-readRight .zl-xingxing{
+	margin-top: 0.2rem;
+	width: 1.9rem;height: 0.48rem;
+	float: left;
+}
+.zl-xingxing img{
+	display: block;
+	float: left;
+}
+.zl-button{
+	margin-top: 0.2rem;
+	width: 2.1rem;
+	height: 0.57rem;
+	border-radius: 0.5rem;
+	text-align: center;
+	float: right;
+}
+.zl-button .zl-btn{
+	font-size: 0.24rem;
+	color: #FFFEFE;
+	line-height: 0.57rem;
+	float: left;
+	margin-left: 0.1rem;
+}
+.zl-button .zl-yuan{
+	float: left;
+	width: 0.12rem;height: 0.12rem;
+	background: #f2f2f2;
+	border-radius: 50%;
+	margin-top: 0.23rem;
+}
+.zl-button .yuan1{
+	margin-left: 0.1rem;
+}
+.zl-button .yuan2{
+	float: right;
+	margin-right: 0.10rem;
+}

@@ -24,9 +24,8 @@ angular.module("controllers",["services"])
             $scope.data=data;
         })
     }])
-    // .controller("regcheck",["$scope","$http",function($scope,$http){
-    //     alert(1)
-    //     $http({url:"/regcheck"}).then(function(data){//注册成功后返回的信息
-    //         $scope.data=data;
-    //     })
-    // }])
+    .controller("wd-booksearch",["$scope","$http",function($scope,$http){
+        $http({url:"/booksearch"}).then(function(data){//热门搜索
+            $scope.data=data;
+        })
+    }])

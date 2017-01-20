@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>榜单</title>
+    <script src="js/mui.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/bangdan.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+			function resize(originSize,type){
+			    var type=type||"x";
+			    var widths=document.documentElement.clientWidth;
+			    var heights=document.documentElement.clientHeight;
+			    if(type=="x"){
+			        var scale=widths/originSize*100;
+			    }else if(type=="y"){
+			        var scale=heights/originSize*100;
+			    }
+			
+			    document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+			}
+			
+			window.onload=function(){
+			    resize(750)
+			}	
+    </script>
+</head>
+<body>
+	<div class="zl-header">
+		<div class="zl-back"><</div>
+		<div class="zl-title">
+			新书阅读榜单
+		</div>
+		<div class="zl-search">
+			<a class="mui-icon mui-icon-search"></a>
+		</div>
+		<div class="zl-headNav">
+			<div class="zl-navBox">
+				<ul class="zl-navCon">
+					<li class="zl-navList zl-active">日榜</li>
+					<li class="zl-xian"></li>
+					<li class="zl-navList">周榜</li>
+					<li class="zl-xian"></li>
+					<li class="zl-navList">总榜</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="zl-contain">
+		<ul class="zl-readCon"  >
+			<li class="zl-readList">
+				<a href=""class="zl-readImg">
+					<img src="img/bangdan.png" alt="" style="height: 100%;"/>
+				</a>
+				<div class="zl-readRight">
+					<p id="zl-readrightTit">《汉字:汉字设计与应用》</p>
+					<p>一本关于汉字设计与美学的书,能够彰显出当代汉字及汉字...</p>
+					<p class="zl-author">作者：袁仄</p>
+					<p class="zl-zishu">字数：6万字</p>
+					<div class="zl-xingxing">
+						<img src="img/xingxing1.png" alt="" />
+						<img src="img/xingxing2.png" alt="" />
+					</div>
+					<div class="zl-button" style="background: #3abffd;">
+						<div class="zl-yuan yuan1"></div>
+						<div class="zl-btn">点击这里查看</div>
+						<div class="zl-yuan yuan2"></div>
+					</div>
+				</div>
+			</li>
+			<li class="zl-readList">
+				<a href=""class="zl-readImg">
+					<img src="img/bangdan.png" alt="" style="height: 100%;"/>
+				</a>
+				<div class="zl-readRight">
+					<p id="zl-readrightTit">《汉字:汉字设计与应用》</p>
+					<p>一本关于汉字设计与美学的书,能够彰显出当代汉字及汉字...</p>
+					<p class="zl-author">作者：袁仄</p>
+					<p class="zl-zishu">字数：6万字</p>
+					<div class="zl-xingxing">
+						<img src="img/xingxing1.png" alt="" />
+						<img src="img/xingxing2.png" alt="" />
+					</div>
+					<div class="zl-button" style="background: #3abffd;">
+						<div class="zl-yuan yuan1"></div>
+						<div class="zl-btn">点击这里查看</div>
+						<div class="zl-yuan yuan2"></div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
